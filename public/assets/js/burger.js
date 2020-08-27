@@ -1,6 +1,7 @@
 $(document).ready (function(){
 
-    $(".change-devoured").on("click", function(event) {
+    $(".devoured").on("click", function(event) {
+      console.log("can you see me?")
       let id = $(this).data("id");
       let newDevoured = $(this).data("devoured");
       let eaten = {
@@ -20,7 +21,7 @@ $(document).ready (function(){
       );
     });
   
-    $("newBurgerButton").on("click", function(event) {
+    $(".newBurgerButton").on("click", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
@@ -40,5 +41,21 @@ $(document).ready (function(){
         }
       );
     });
+
+$(".delete_burger").on("click", function(event) {
+  var id = $(this).data("id");
+
+  // Send the DELETE request.
+  $.ajax("/api/burgers/" + id, {
+    type: "DELETE"
+  }).then(
+    function() {
+      console.log("deleted burger", id);
+      // Reload the page to get the updated list
+      location.reload();
+    }
+  );
 });
+});
+
   

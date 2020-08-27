@@ -10,8 +10,8 @@ let burger = {
           cb(res);
         });
       },    
-     updateOne: function(devoured,bID, cb) {
-        orm.insertOne("burgers", cols, vals, function(res) {
+     updateOne: function(cols,vals, cb) {
+        orm.updateOne("burgers", cols, vals, function(res) {
           cb(res);
         });
       },  
