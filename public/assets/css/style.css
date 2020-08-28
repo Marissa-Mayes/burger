@@ -1,0 +1,26 @@
+body{
+    background: orange;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    text-align: center;
+}
+.create-form{
+    text-align: center;
+}
+.form-group{
+    text-align: center;
+
+}
