@@ -1,0 +1,26 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "The burger application allows user to build their burger menu by allowing user input for burgers. the user is able to enter as many burgers as they like and have the option to delete or devour the burger. when user slects devour it the selection is then populated under the burger menu section, you are then able to delete the burger should you choose to do so",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marissa-Mayes/burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marissa-Mayes/burger/issues"
+  },
+  "homepage": "https://github.com/Marissa-Mayes/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
