@@ -2,6 +2,7 @@
 const mysql = require("mysql");
 var connection;
 if (process.env.JAWSDB_URL) {
+  console.log("hope we're on jaws")
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
